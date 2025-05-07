@@ -2,18 +2,19 @@
 **Download Data:**
 Download uterine tissue data prepared by Wang et al. (needs citation)
 
-# preprocessing data for deseq
+# DESeq2
+### preprocessing data for deseq
 1. run preprocessing script
    Input
    Output
    Usage
-# running deseq
+### running deseq
 ```
 git clone -link to repo-
 ```
 - source code in desired directory
 ## output 
-# gemdiff
+# GEMdiff
 ## processing gene matrix 
 ## git gemdiff
 ## training script
