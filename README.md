@@ -1,6 +1,5 @@
 # tissue-deg-perturb
-
-** Download Data **
+**Download Data:**
 Download uterine tissue data prepared by Wang et al. (needs citation)
 
 # preprocessing data for deseq
