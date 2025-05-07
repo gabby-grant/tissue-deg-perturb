@@ -20,7 +20,7 @@ cat UTERN_UCECT_train.txt | awk '{$1=$1}1' OFS='\t'  > UTERN_UCECT.train; cat UT
 # make labels
 bash gembuild/make_labels.sh UTERN_UCECT.train; bash gembuild/make_labels.sh UTERN_UCECT.test
 ```
-check distribuition of data by running a histogram on the datasets
+### check distribuition of data by running a histogram on the datasets
 ```bash
 head -n 20 UTERN_UCECT.txt | awk '{print $1}' > gene_names_UTERN.txt
 python gembuild/gem_histogram.py -e UTERN_UCECT.test -g gene_names_UTERN.txt -o test-output-histogram.png
