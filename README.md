@@ -1,11 +1,18 @@
 # tissue-deg-perturb
 
-# download data 
+** Download Data **
+Download uterine tissue data prepared by Wang et al. (needs citation)
+
 # preprocessing data for deseq
+1. run preprocessing script
+   Input
+   Output
+   Usage
 # running deseq
 ```
 git clone -link to repo-
 ```
+- source code in desired directory
 ## output 
 # gemdiff
 ## processing gene matrix 
