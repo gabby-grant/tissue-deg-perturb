@@ -28,10 +28,11 @@ python gembuild/gem_histogram.py -e UTERN_UCECT.test -g test-gene-names.txt -o t
 python gembuild/gem_histogram.py -e UTERN_UCECT.train -g train-gene-names.txt -o train-output-histogram.png
 ```
 ## git gemdiff
-### training script
-### perturb script 
-### output 
-## gemdif with gene set
+ 
+### gene set
 gene set from selected studies 
 1. train model on new gene set
 2. perturb model on new gene set
+### training script
+### perturb script 
+### output
