@@ -6,7 +6,7 @@ Download uterine tissue data prepared by [Wang et al](https://figshare.com/artic
 For preprocessing data and DESeq2 workflow follow https://github.com/gabby-grant/deseq-workflow
 
 # GEMDiff 
-### Preprocessing Data with `gembuild` 
+## Preprocessing Data with `gembuild` 
 ```bash
 git clone https://github.com/feltus/gembuild
 # merge matrices
@@ -20,7 +20,7 @@ cat UTERN_UCECT_train.txt | awk '{$1=$1}1' OFS='\t'  > UTERN_UCECT.train; cat UT
 # make labels
 bash gembuild/make_labels.sh UTERN_UCECT.train; bash gembuild/make_labels.sh UTERN_UCECT.test
 ```
-### check distribuition of data by running and analyzing distributions on a histogram
+Check distribuition of data by running and analyzing distributions on a histogram.
 ```bash
 head -n 1 UTERN_UCECT.test > test-gene-names.txt
 head -n 1 UTERN_UCECT.train > train-gene-names.txt
