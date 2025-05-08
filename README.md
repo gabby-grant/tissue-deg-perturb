@@ -22,10 +22,13 @@ bash gembuild/make_labels.sh UTERN_UCECT.train; bash gembuild/make_labels.sh UTE
 ```
 Check distribuition of data by running and analyzing distributions on a histogram.
 ```bash
+# transfor data to log2 FC distribuition
+python gembuild/log2_transform_gem.py -i UTERN_UCECT.test -o UTERN_UCECT.test.log2
+python gembuild/log2_transform_gem.py -i UTERN_UCECT.train -o UTERN_UCECT.train.log2
 head -n 1 UTERN_UCECT.test > test-gene-names.txt
 head -n 1 UTERN_UCECT.train > train-gene-names.txt
-python gembuild/gem_histogram.py -e UTERN_UCECT.test -g test-gene-names.txt -o test-output-histogram.png
-python gembuild/gem_histogram.py -e UTERN_UCECT.train -g train-gene-names.txt -o train-output-histogram.png
+python gembuild/gem_histogram.py -e UTERN_UCECT.test.log2 -g test-gene-names.txt -o test-output-histogram.png -l
+python gembuild/gem_histogram.py -e UTERN_UCECT.train.log2 -g train-gene-names.txt -o train-output-histogram.png -l
 ```
 ## git gemdiff
  
