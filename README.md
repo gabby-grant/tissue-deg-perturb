@@ -6,7 +6,7 @@ Download uterine tissue data prepared by [Wang et al](https://figshare.com/artic
 For preprocessing data and DESeq2 workflow follow https://github.com/gabby-grant/deseq-workflow
 
 # GEMDiff 
-### processing gene matrix 
+### Preprocessing Data with `gembuild` 
 ```bash
 git clone https://github.com/feltus/gembuild
 # merge matrices
