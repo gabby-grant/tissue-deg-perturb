@@ -11,21 +11,17 @@
 #load modules
 module load anaconda3/2023.09-0
 
-
 #Go to working directory
-#cd /scratch/ffeltus/emt/GEMDIFF/BLCA
+cd /path/to/working/directory
 
 # activate the created conda environment
 source activate GEMDiff  #create before running script
 
 # clone the package
-#rm GEMDiff -rf
-#git clone https://github.com/xai990/GEMDiff.git
-#cd GEMDiff
-#pip install -e . 
-
-#Move datasets to GEMDiff
-#cp ../datasets . -r
+rm GEMDiff -rf
+git clone https://github.com/xai990/GEMDiff.git
+cd GEMDiff
+pip install -e . 
 
 #train the model
 python scripts/train.py --config data-cervix/CERVN_CESCT.yaml --dir log-cerv 
