@@ -44,13 +44,24 @@ Endometrial-Cancer-Bianco	ARID1A	ELAPOR1	C1QTNF12	MTOR	GADD45A	GSTM1	LEPR	MACF1	
 
 ### Training
 
-```
+```bash
 chmod +x training.sh
 chmod +x training-gene-set.sh
+sbatch training.sh
+sbatch training-gene-set.sh
 ```
 
 ### Perturb 
+```bash
+chmod +x perturb.sh
+chmod +x perturb-gene-set.sh
+sbatch perturb.sh
+sbatch perturb-gene-set.sh
+```
 #### Visualization
+UMAP Plot output
+![image](https://github.com/user-attachments/assets/0f4ccd8c-57b4-4e22-9a6f-a56c7f52e360)
+
 
 # Gene Network 
 String network vizualization
