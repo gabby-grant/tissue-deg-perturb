@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-PerturbViz - Visualize perturbed genes in a network context with DESeq2 results
+PerturbViz - 
+Visualize perturbed genes in a network context with DESeq2 results
+
+
+
+Created by: Gabriela Grant
+Date: May 3, 2025
 """
 
 import pandas as pd
