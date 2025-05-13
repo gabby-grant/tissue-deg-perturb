@@ -1,0 +1,1 @@
+These are the shell scripts to run the training and perturb slurm schedulers. The files with gene-set suffix are to train the model with the gene set from paper. The others are random gene set selected from GEMDiff.
