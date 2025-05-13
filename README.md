@@ -31,8 +31,8 @@ python gembuild/gem_histogram.py -e UTERN_UCECT.test.log2 -g test-gene-names.txt
 python gembuild/gem_histogram.py -e UTERN_UCECT.train.log2 -g train-gene-names.txt -o train-output-histogram.png -l
 ```
 ## GEMdiff Setup
-
- activate the created conda environment create before running script
+Activate the created conda environment create before running script. Follow instructions for GEMDiff
+- https://github.com/xai990/GEMDiff
  
 ### Gene Set of Interest
 This gene set is selected from: 
