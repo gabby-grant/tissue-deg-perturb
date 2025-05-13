@@ -24,4 +24,5 @@ cd GEMDiff
 pip install -e . 
 
 #train the model
-python scripts/train.py --config data-cervix/CERVN_CESCT.yaml --dir log-cerv 
+
+python scripts/train.py --config data/UTERN-UCECT.yaml --dir log
