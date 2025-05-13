@@ -43,6 +43,12 @@ Endometrial-Cancer-Bianco	ARID1A	ELAPOR1	C1QTNF12	MTOR	GADD45A	GSTM1	LEPR	MACF1	
 ```
 
 ### Training
+
+```
+chmod +x training.sh
+chmod +x training-gene-set.sh
+```
+
 ### Perturb 
 #### Visualization
 
