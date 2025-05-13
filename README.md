@@ -122,4 +122,6 @@ You can adjust several parameters to fine-tune your network:
 ```
 ## Perturbed Genes Visualization
 Perturbed genes visualization with differentially expressed genes
+This script visualizes perturbed genes identified by GEMDiff in a network context,
+highlighting connections between perturbed genes and top differentially expressed genes.
 
