@@ -1,0 +1,33 @@
+data:
+  data_dir: "data/"
+  dir_out: "results"
+  train_path: "data/UTERN_UCECT.train.log2" 
+  train_label_path: "data/UTERN_UCECT.train.label"
+  test_path: "data/UTERN_UCECT.test.log2"
+  test_label_path: "data/UTERN_UCECT.test.label"
+  filter: "replace"
+  corerate: 1
+
+  
+model:
+  class_cond: True
+  dropout: 0.0
+  n_layer: 4
+  n_head: 2
+  feature_size: 20
+  
+diffusion:
+  noise_schedule: "cosine"
+  linear_start: 0.0001 
+  linear_end: 0.0195
+  diffusion_steps: 1000
+  log_every_t: 10
+  learn_sigma: False
+
+  
+train:
+  lr: 0.00003
+  # num_epoch: 1
+  batch_size: 16
+  schedule_plot: False
+  # log_interval: 100
