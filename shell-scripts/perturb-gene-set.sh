@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=PERTURB      # Set the job name
+#SBATCH --job-name=PERTURB-gs      # Set the job name
 #SBATCH --nodes 1
 #SBATCH --tasks-per-node 1
 #SBATCH --cpus-per-task 4
