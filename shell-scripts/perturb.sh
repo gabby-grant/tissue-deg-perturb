@@ -19,4 +19,4 @@ source activate GEMDiff  #create before running script
 
 #Perturb samples
 ###Make sure to change the model path which is found in the train log file.###
-python scripts/perturb.py --config data-cervix/CERVN_CESCT.yaml --dir log-cerv  --model_path log-cerv/2025-04-25-15-58/model10000.pt --valid 
+python scripts/perturb.py --config data/UTERN-UCECT.yaml --dir log-degs  --model_path log-degs/2025-05-08-21-16/model10000.pt --valid 
