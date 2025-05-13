@@ -96,5 +96,29 @@ UMAP Plot output
 
 
 # Gene Network 
-String network vizualization
+
+## STRING Network Generator 
+
+This script generates a gene interaction network file from the STRING database,
+suitable for use with the Perturb visualization tool.
+
+Usage:
+```
+  python generate_string_network.py --genes perturbed_genes.txt --degs deseq_results.tsv --output string_network.tsv
+```
+Run the script with your perturbed genes and DEG file:
+```
+python generate_string_network.py --genes "TMEM184A,PDE1C,GPR146,FAM110B" --degs your_degs_file.tsv --output gemdiff_network.tsv
+```
+Alternatively, if you have your perturbed genes in a file (one per line):
+```
+python generate_string_network.py --genes perturbed_genes.txt --degs your_degs_file.tsv --output gemdiff_network.tsv
+```
+You can adjust several parameters to fine-tune your network:
+
+`--score`: Confidence threshold (0-1000) for STRING interactions (higher = more confident)
+`--additional`: Number of additional interacting genes to include (0 for only direct interactions)
+`--species`: Change to 10090 for mouse, 10116 for rat, etc.
+
+## Perturbed Genes Visualization
 Perturbed genes visualization with differentially expressed genes
